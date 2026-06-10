@@ -14,8 +14,10 @@ security scanning, and real-time monitoring.
 
 ## 🏗️ Architecture
 
-![Architecture](mlops-platform/images/architecture.png)
+#![Architecture](mlops-platform/images/architecture.png)
+## 🏗️ Architecture
 
+![Architecture](images/mlops_proj_archi.png)
 ---
 
 ## ✨ Features
