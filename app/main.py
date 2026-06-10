@@ -1,14 +1,17 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from prometheus_fastapi_instrumentator import Instrumentator
 import pickle
 import numpy as np
 
 # Initialize the FastAPI app
 app = FastAPI(title="Iris Flower Prediction API")
 
-# Load the trained model once when the app starts
+# Initialize Prometheus metrics
+Instrumentator().instrument(app).expose(app)
 
-with open("model.pkl", "rb") as f:
+# Load the trained model once when the app starts
+with open("app/model.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Define what input data looks like
