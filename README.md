@@ -14,7 +14,7 @@ security scanning, and real-time monitoring.
 
 ## 🏗️ Architecture
 
-> Architecture diagram coming soon
+![Architecture](mlops-platform/images/architecture.png)
 
 ---
 
@@ -46,6 +46,8 @@ security scanning, and real-time monitoring.
 ---
 
 ## 📁 Project Structure
+
+'''
 mlops-platform/
 ├── app/                    # FastAPI ML application
 │   ├── main.py             # API endpoints + Prometheus metrics
@@ -69,6 +71,7 @@ mlops-platform/
 ├── .github/workflows/      # CI/CD pipeline
 │   └── ci-cd.yaml          # GitHub Actions workflow
 └── Dockerfile              # Hardened container image
+'''
 
 ---
 
